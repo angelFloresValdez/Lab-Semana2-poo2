@@ -1,0 +1,21 @@
+@model StundetModel;
+
+@{
+    ViewData["Title"] = "Listado de Alumnos";
+
+    DateTime fechainscripcion=new DateTime(2024,05,20);
+}
+
+<h2>@DateTime.Now </h2>
+<i>@fechainscripcion.ToLongDateString()</i>
+
+<h1 class="display-2"><center>Listado de Alumnos</center></h1>
+<h3><center>@Model.Nombre.ToUpper() Es un alumno de la <b>carrera</b> @Model.Carrera.ToLower()</center></h3>
+
+<center><img src="~/imagenes/alumnos.jpg" width="400" height="300"></center><br>
+
+<center><label>Esto es una prueba</center></label>
+<div class="text-center">
+    @*<h2 class="display-4">Welcome</h2>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
